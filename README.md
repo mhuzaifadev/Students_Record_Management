@@ -1,4 +1,4 @@
-# Students_Record_Management
-This project is built using JAVA for university project.
+### Students_Record_Management
+<img src = "https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/Students_Management_System.png">
 
-This project was a failure.
+
