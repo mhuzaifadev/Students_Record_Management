@@ -893,7 +893,7 @@ public class Add_Record {
 						jtxtDob.getText(),
 						cmbDepart.getSelectedItem().toString(),
 						cmbGender.getSelectedItem().toString(),
-						cmbGender.getSelectedItem().toString(), // address
+						jtxtAddress.getText(), // address
 						Integer.parseInt(jtxtS1.getText()),
 						Integer.parseInt(jtxtS2.getText()),
 						Integer.parseInt(jtxtS3.getText()),
@@ -912,6 +912,27 @@ public class Add_Record {
 						Integer.parseInt(t4.getText()),
 						Integer.parseInt(t5.getText()),
 						Integer.parseInt(t6.getText()),
+						
+						Integer.parseInt(ch1.getText()),
+						Integer.parseInt(ch2.getText()),
+						Integer.parseInt(ch3.getText()),
+						Integer.parseInt(ch4.getText()),
+						Integer.parseInt(ch5.getText()),
+						Integer.parseInt(ch6.getText()),
+						
+						grade1.getText(),
+						grade2.getText(),
+						grade3.getText(),
+						grade4.getText(),
+						grade5.getText(),
+						grade6.getText(),
+						
+						Double.parseDouble(qp1.getText()),
+						Double.parseDouble(qp2.getText()),
+						Double.parseDouble(qp3.getText()),
+						Double.parseDouble(qp4.getText()),
+						Double.parseDouble(qp5.getText()),
+						Double.parseDouble(qp6.getText()),
 						
 						jtxtTotalMarks.getText(),
 						jtxtGrade.getText(),
@@ -936,11 +957,13 @@ public class Add_Record {
     public static void InsertStudentDataInDB(String Student_ID, String firstName, String lastName, int semester, int batch, String DOB,
     		String department, String gender, String address, int ses1, int ses2, int ses3, int ses4, int ses5,int ses6,
     		int ft1, int ft2, int ft3, int ft4, int ft5, int ft6, int total1, int total2, int total3, int total4, int total5, int total6,
+    		int ch1, int ch2, int ch3, int ch4, int ch5, int ch6, String grade1,  String grade2,  String grade3,  String grade4,  String grade5,  String grade6,  
+    		double qp1, double qp2, double qp3, double qp4, double qp5, double qp6, 
     		int totalMarks, String grade, float percentage, float gpa) {
 	 
 				try {	
-					String query = "INSERT INTO tb_student_rec(`Student ID`,`First Name`,`Last Name`, `Semester`,`Batch`,`Date of Birth`,`Department`,`Gender`,`Address`,`Ses 01`,`Ses 02`,`Ses 03`,`Ses 04`,`Ses 05`,`Ses 06`,`F.T 01`,`F.T 02`,`F.T 03`,`F.T 04`,`F.T 05`,`F.T 06`,`Total 1`,`Total 2`,`Total 3`,`Total 4`,`Total 5`,`Total 6`,`Total Marks`,`Grade`,`Percentage`,`GPA`\r\n"
-							+ ",) VALUES('"+Student_ID+"' , "+firstName+", "+lastName+","+semester+","+batch+","+DOB+","+department+","+gender+","+address+","+ses1+","+ses2+","+ses3+","+ses4+","+ses5+","+ses6+","+ft1+","+ft2+","+ft3+","+ft4+","+ft5+","+ft6+","+total1+","+total2+","+total3+","+total4+","+total5+","+total6+","+totalMarks+","+grade+","+percentage+","+gpa+") ";
+					String query = "INSERT INTO tb_student_rec(`Student ID`,`First Name`,`Last Name`, `Semester`,`Batch`,`Date of Birth`,`Department`,`Gender`,`Address`,`Ses 01`,`Ses 02`,`Ses 03`,`Ses 04`,`Ses 05`,`Ses 06`,`F.T 01`,`F.T 02`,`F.T 03`,`F.T 04`,`F.T 05`,`F.T 06`,`CH1`,`CH2`,`CH3`,`CH4`,`CH5`,`CH6`,`grade1`,`grade2`,`grade3`,`grade4`,`grade5`,`grade6`,`QP1`,`QP2`,`QP3`,`QP4`,`QP5`,`QP6`,`Total 1`,`Total 2`,`Total 3`,`Total 4`,`Total 5`,`Total 6`,`Total Marks`,`Grade`,`Percentage`,`GPA`\r\n"
+							+ ",) VALUES('"+Student_ID+"' , "+firstName+", "+lastName+","+semester+","+batch+","+DOB+","+department+","+gender+","+address+","+ses1+","+ses2+","+ses3+","+ses4+","+ses5+","+ses6+","+ft1+","+ft2+","+ft3+","+ft4+","+ft5+","+ft6+","+ch1+","+ch2+","+ch3+","+ch4+","+ch5+","+ch6+","+qp1+","+qp2+","+qp3+","+qp4+","+qp5+","+qp6+","+total1+","+total2+","+total3+","+total4+","+total5+","+total6+","+totalMarks+","+grade+","+percentage+","+gpa+") ";
 							 
 					Statement st = null;
 					st = (Statement) Connect.con.createStatement();
