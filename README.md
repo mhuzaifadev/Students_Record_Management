@@ -13,7 +13,19 @@ The main objective of this project is to build a student database system that wi
 
 <h3> Developed by: </h3>
 
-* Muhammad Huzaifa Shahbaz
-* Zain - ul - Abidin
-* Tazzakka Arif
-* Maham Abbasi
+* <h3><a href="https://github.com/mhuzaifadev"> Muhammad Huzaifa Shahbaz </a></h3>
+<a href="https://linkedin.com/in/mhuzaifadev"><img src="https://img.shields.io/badge/-M%20Huzaifa-0077B5?style=flat&logo=Linkedin&logoColor=white"/></a>
+<a href="mailto:mhuzaifadev@gmail.com"><img src="https://img.shields.io/badge/-mhuzaifadev@gmail.com-D14836?style=flat&logo=Gmail&logoColor=white"/></a>
+
+* <h3><a href="https://github.com/ZainLipa"> Zain - ul - Abidin </a></h3> 
+<a href="https://linkedin.com/in/ZainLipa"><img src="https://img.shields.io/badge/-Zain%20Lipa-0077B5?style=flat&logo=Linkedin&logoColor=white"/></a>
+<a href="mailto:z301808@gmail.com"><img src="https://img.shields.io/badge/-z301808@gmail.com-D14836?style=flat&logo=Gmail&logoColor=white"/></a>
+
+
+* <h3><a href="https://github.com/MahamAbbasi07"> Maham Abbasi </a></h3> 
+<a href="https://linkedin.com/in/maham-abbasi-086aa5186"><img src="https://img.shields.io/badge/-Maham%20Abbasi-0077B5?style=flat&logo=Linkedin&logoColor=white"/></a>
+<a href="mailto:mahamabbasi07@gmail.com"><img src="https://img.shields.io/badge/-mahamabbasi07@gmail.com-D14836?style=flat&logo=Gmail&logoColor=white"/></a>
+
+
+* <h3><a href="https://github.com/tazzakka1234"> Tazzakka Arif </a></h3> 
+<a href="mailto:ariftazzakka@gmail.com"><img src="https://img.shields.io/badge/-ariftazzakka@gmail.com-D14836?style=flat&logo=Gmail&logoColor=white"/></a>
