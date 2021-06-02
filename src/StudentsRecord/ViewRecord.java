@@ -11,6 +11,7 @@ import javax.swing.SwingConstants;
 import javax.swing.JButton;
 import javax.swing.JTextPane;
 import java.awt.event.ActionListener;
+import java.text.MessageFormat;
 import java.awt.event.ActionEvent;
 
 public class ViewRecord {
@@ -70,6 +71,10 @@ public class ViewRecord {
 		frame.getContentPane().add(lblNewLabel_1);
 		
 		JButton btnSearch = new JButton("Search");
+		btnSearch.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+		});
 		btnSearch.setFont(new Font("Google Sans Medium", Font.PLAIN, 20));
 		btnSearch.setBounds(443, 82, 111, 41);
 		frame.getContentPane().add(btnSearch);
@@ -82,6 +87,16 @@ public class ViewRecord {
 		JButton btnPrint = new JButton("Print");
 		btnPrint.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				MessageFormat header = new MessageFormat("Printing in Progress");
+				MessageFormat footer = new MessageFormat("Page {0, number, integer}");
+				
+				try
+				{
+					textPane.print();
+				}
+				catch(java.awt.print.PrinterException ev) {
+					System.err.format("No Printer Found", ev.getMessage());
+				}
 				
 			}
 		});
