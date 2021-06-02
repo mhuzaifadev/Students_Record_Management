@@ -71,7 +71,7 @@ public class StudentsRecord {
 		
 		ImageIcon logo = new ImageIcon("Students_Management_System.png");
 		
-		JButton btnAdd = new JButton("ADD Record");
+		JButton btnAdd = new JButton("Add/Modify");
 		btnAdd.setFont(new Font("Google Sans Medium", Font.BOLD, 28));
 		btnAdd.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

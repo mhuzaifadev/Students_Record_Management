@@ -107,7 +107,7 @@ public class Add_Record {
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(0, 0, 1816, 600);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
 		JPanel panel = new JPanel();
@@ -583,7 +583,6 @@ public class Add_Record {
 		JTextArea jtxtTranscript = new JTextArea();
 		jtxtTranscript.setFont(new Font("Times New Roman", Font.BOLD, 14));
 		jtxtTranscript.setForeground(new Color(0, 0, 0));
-		jtxtTranscript.setEnabled(false);
 		jtxtTranscript.setBounds(10, 11, 691, 495);
 		panel_1.add(jtxtTranscript);
 		
@@ -828,7 +827,7 @@ public class Add_Record {
 		
 		JButton btnPrint = new JButton("Print");
 		btnPrint.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+			synchronized public void actionPerformed(ActionEvent e) {
 				
 				MessageFormat header = new MessageFormat("Printing in Progress");
 				MessageFormat footer = new MessageFormat("Page {0, number, integer}");
@@ -882,7 +881,7 @@ public class Add_Record {
 		
 		JButton btnUpload = new JButton("Upload");
 		btnUpload.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+			synchronized public void actionPerformed(ActionEvent e) {
 				
 				InsertStudentDataInDB(
 						jtxtRoll.getText(),

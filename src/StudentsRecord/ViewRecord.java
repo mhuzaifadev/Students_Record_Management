@@ -49,7 +49,7 @@ public class ViewRecord {
 		frame = new JFrame();
 		frame.getContentPane().setBackground(new Color(240, 255, 255));
 		frame.setBounds(100, 100, 580, 769);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
 		textField = new JTextField();
