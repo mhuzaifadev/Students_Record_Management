@@ -7,6 +7,9 @@ import java.awt.EventQueue;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.lang.System.Logger;
+import java.lang.System.Logger.Level;
+import java.sql.SQLException;
 import java.text.MessageFormat;
 
 import javax.swing.DefaultComboBoxModel;
@@ -19,6 +22,10 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
+
+import com.mysql.jdbc.Statement;
+
+import StudentsRecord.connection.Connect;
 
 public class Add_Record {
 
@@ -788,7 +795,7 @@ public class Add_Record {
 						"\t    SIR SYED UNIVERSITY OF ENGINEERING & TECHNOLOGY\n\n"
 						+"\t\t    TRANSCRIPT  OF  SEMESTER  "+cmbSemester.getSelectedItem().toString()+"\n"
 						+ "======================================================================================\n"
-						+ "Roll #\t"+jtxtBatchNo.getText()+"-"+cmbDepart.getSelectedItem().toString()+"-"+jtxtRoll.getText()+"\n"
+						+ "Roll #\t"+jtxtRoll.getText()+"\t\tDepartment"+cmbDepart.getSelectedItem().toString()+"\n"
 						+ "First Name\t"+jtxtFName.getText()+"\t"
 						+ "Last Name\t"+jtxtLName.getText()+"\n"
 						+ "Sex\t"+cmbGender.getSelectedItem().toString()+"\t\t"
@@ -876,6 +883,42 @@ public class Add_Record {
 		JButton btnUpload = new JButton("Upload");
 		btnUpload.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
+				InsertStudentDataInDB(
+						jtxtRoll.getText(),
+						jtxtFName.getText(),
+						jtxtLName.getText(),
+						Integer.parseInt(cmbDepart.getSelectedItem().toString()), // semester change
+						Integer.parseInt(jtxtBatchNo.getText()),
+						jtxtDob.getText(),
+						cmbDepart.getSelectedItem().toString(),
+						cmbGender.getSelectedItem().toString(),
+						cmbGender.getSelectedItem().toString(), // address
+						Integer.parseInt(jtxtS1.getText()),
+						Integer.parseInt(jtxtS2.getText()),
+						Integer.parseInt(jtxtS3.getText()),
+						Integer.parseInt(jtxtS4.getText()),
+						Integer.parseInt(jtxtS5.getText()),
+						Integer.parseInt(jtxtS6.getText()),
+						Integer.parseInt(ft1.getText()),
+						Integer.parseInt(ft2.getText()),
+						Integer.parseInt(ft3.getText()),
+						Integer.parseInt(ft4.getText()),
+						Integer.parseInt(ft5.getText()),
+						Integer.parseInt(ft6.getText()),
+						Integer.parseInt(t1.getText()),
+						Integer.parseInt(t2.getText()),
+						Integer.parseInt(t3.getText()),
+						Integer.parseInt(t4.getText()),
+						Integer.parseInt(t5.getText()),
+						Integer.parseInt(t6.getText()),
+						
+						jtxtTotalMarks.getText(),
+						jtxtGrade.getText(),
+						jtxtPerc.getText(),
+						jtxtGPA.getText(),
+						
+						);
 			}
 		});
 		btnUpload.setFont(new Font("Tahoma", Font.PLAIN, 24));
@@ -887,6 +930,27 @@ public class Add_Record {
 		lblNewLabel_4.setBounds(1337, 0, 229, 41);
 		frame.getContentPane().add(lblNewLabel_4);
 	}
+	
+
+	
+    public static void InsertStudentDataInDB(String Student_ID, String firstName, String lastName, int semester, int batch, String DOB,
+    		String department, String gender, String address, int ses1, int ses2, int ses3, int ses4, int ses5,int ses6,
+    		int ft1, int ft2, int ft3, int ft4, int ft5, int ft6, int total1, int total2, int total3, int total4, int total5, int total6,
+    		int totalMarks, String grade, float percentage, float gpa) {
+	 
+				try {	
+					String query = "INSERT INTO tb_student_rec(`Student ID`,`First Name`,`Last Name`, `Semester`,`Batch`,`Date of Birth`,`Department`,`Gender`,`Address`,`Ses 01`,`Ses 02`,`Ses 03`,`Ses 04`,`Ses 05`,`Ses 06`,`F.T 01`,`F.T 02`,`F.T 03`,`F.T 04`,`F.T 05`,`F.T 06`,`Total 1`,`Total 2`,`Total 3`,`Total 4`,`Total 5`,`Total 6`,`Total Marks`,`Grade`,`Percentage`,`GPA`\r\n"
+							+ ",) VALUES('"+Student_ID+"' , "+firstName+", "+lastName+","+semester+","+batch+","+DOB+","+department+","+gender+","+address+","+ses1+","+ses2+","+ses3+","+ses4+","+ses5+","+ses6+","+ft1+","+ft2+","+ft3+","+ft4+","+ft5+","+ft6+","+total1+","+total2+","+total3+","+total4+","+total5+","+total6+","+totalMarks+","+grade+","+percentage+","+gpa+") ";
+							 
+					Statement st = null;
+					st = (Statement) Connect.con.createStatement();
+					st.executeUpdate(query) ;
+				} catch (SQLException ex) {
+					System.out.println("Data Not Inserted" + ex.getMessage());
+				 
+				}
+			}
+	
 	
 	
 

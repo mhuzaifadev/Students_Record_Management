@@ -6,6 +6,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.LineBorder;
 
+import com.mysql.jdbc.Connection;
+
 import java.awt.Color;
 import java.awt.Component;
 
@@ -25,7 +27,7 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JTextArea;
 import javax.swing.JTextPane;
 import javax.swing.SwingConstants;
-
+import StudentsRecord.connection.*;
 
 public class StudentsRecord {
 
@@ -40,7 +42,9 @@ public class StudentsRecord {
 			public void run() {
 				try {
 					StudentsRecord window = new StudentsRecord();
+					Connect.connects();
 					window.frame.setVisible(true);
+					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
