@@ -2,9 +2,6 @@
 <img src = "https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/Students_Management_System.png">
 
 
-<img src = "https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/Students_Management_System.png">
-
-
 
 <p align = "JUSTIFY">The success of any organization such as Engineering Institute depends on its ability to acquire accurate and timely data about its operations, to manage this data effectively, and to use it to analyze and guide its activities. The Student Record Management system offer users (Registrar) with a unified view of data from multiple sources. </p>
 <p align = "JUSTIFY">
