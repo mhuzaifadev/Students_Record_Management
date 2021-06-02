@@ -12,6 +12,7 @@ The main objective of this project is to build a student database system that wi
 
 
 <h3> Developed by: </h3>
+
 * Muhammad Huzaifa Shahbaz
 * Zain - ul - Abidin
 * Tazzakka Arif
