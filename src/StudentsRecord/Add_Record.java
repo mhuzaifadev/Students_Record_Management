@@ -934,10 +934,10 @@ public class Add_Record {
 						Double.parseDouble(qp5.getText()),
 						Double.parseDouble(qp6.getText()),
 						
-						jtxtTotalMarks.getText(),
+						Integer.parseInt(jtxtTotalMarks.getText()),
 						jtxtGrade.getText(),
-						jtxtPerc.getText(),
-						jtxtGPA.getText(),
+						Double.parseDouble(jtxtPerc.getText()),
+						Double.parseDouble(jtxtGPA.getText())
 						
 						);
 			}
@@ -959,10 +959,10 @@ public class Add_Record {
     		int ft1, int ft2, int ft3, int ft4, int ft5, int ft6, int total1, int total2, int total3, int total4, int total5, int total6,
     		int ch1, int ch2, int ch3, int ch4, int ch5, int ch6, String grade1,  String grade2,  String grade3,  String grade4,  String grade5,  String grade6,  
     		double qp1, double qp2, double qp3, double qp4, double qp5, double qp6, 
-    		int totalMarks, String grade, float percentage, float gpa) {
+    		int totalMarks, String grade, double percentage, double gpa) {
 	 
 				try {	
-					String query = "INSERT INTO tb_student_rec(`Student ID`,`First Name`,`Last Name`, `Semester`,`Batch`,`Date of Birth`,`Department`,`Gender`,`Address`,`Ses 01`,`Ses 02`,`Ses 03`,`Ses 04`,`Ses 05`,`Ses 06`,`F.T 01`,`F.T 02`,`F.T 03`,`F.T 04`,`F.T 05`,`F.T 06`,`CH1`,`CH2`,`CH3`,`CH4`,`CH5`,`CH6`,`grade1`,`grade2`,`grade3`,`grade4`,`grade5`,`grade6`,`QP1`,`QP2`,`QP3`,`QP4`,`QP5`,`QP6`,`Total 1`,`Total 2`,`Total 3`,`Total 4`,`Total 5`,`Total 6`,`Total Marks`,`Grade`,`Percentage`,`GPA`\r\n"
+					String query = "INSERT INTO tb_student_rec(`Student ID`,`First Name`,`Last Name`, `Semester`,`Batch`,`Date of Birth`,`Department`,`Gender`,`Address`,`Ses 01`,`Ses 02`,`Ses 03`,`Ses 04`,`Ses 05`,`Ses 06`,`F.T 01`,`F.T 02`,`F.T 03`,`F.T 04`,`F.T 05`,`F.T 06`,`CH1`,`CH2`,`CH3`,`CH4`,`CH5`,`CH6`,`grade1`,`grade2`,`grade3`,`grade4`,`grade5`,`grade6`,`QP01`,`QP02`,`QP03`,`QP04`,`QP05`,`QP06`,`Total 1`,`Total 2`,`Total 3`,`Total 4`,`Total 5`,`Total 6`,`Total Marks`,`Grade`,`Percentage`,`GPA`\r\n"
 							+ ",) VALUES('"+Student_ID+"' , "+firstName+", "+lastName+","+semester+","+batch+","+DOB+","+department+","+gender+","+address+","+ses1+","+ses2+","+ses3+","+ses4+","+ses5+","+ses6+","+ft1+","+ft2+","+ft3+","+ft4+","+ft5+","+ft6+","+ch1+","+ch2+","+ch3+","+ch4+","+ch5+","+ch6+","+qp1+","+qp2+","+qp3+","+qp4+","+qp5+","+qp6+","+total1+","+total2+","+total3+","+total4+","+total5+","+total6+","+totalMarks+","+grade+","+percentage+","+gpa+") ";
 							 
 					Statement st = null;
@@ -973,8 +973,5 @@ public class Add_Record {
 				 
 				}
 			}
-	
-	
-	
 
 }

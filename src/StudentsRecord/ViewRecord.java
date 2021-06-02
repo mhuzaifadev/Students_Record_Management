@@ -73,7 +73,8 @@ public class ViewRecord {
 		JButton btnSearch = new JButton("Search");
 		btnSearch.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				System.out.println();
+			}
 		});
 		btnSearch.setFont(new Font("Google Sans Medium", Font.PLAIN, 20));
 		btnSearch.setBounds(443, 82, 111, 41);
