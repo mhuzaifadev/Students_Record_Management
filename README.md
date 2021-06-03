@@ -1,6 +1,6 @@
 ### Students_Record_Management
 <img src = "https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/Students_Management_System.png">
-
+  
 
 <h2> PROJECT DESCRIPTION</h2><br>
 <p align = "JUSTIFY">The success of any organization such as Engineering Institute depends on its ability to acquire accurate and timely data about its operations, to manage this data effectively, and to use it to analyze and guide its activities. The Student Record Management system offer users (Registrar) with a unified view of data from multiple sources. </p>
@@ -14,38 +14,45 @@ The main objective of this project is to build a student database system that wi
 
 <h2>User Experience</h2><br>
 
-<p><b>* Step 01: </b>Open the Students Record Management System. Now we have two options, Add/Modify and View Record.</p>
+<p><b>•	 Step 01: </b>Open the Students Record Management System. Now we have two options, Add/Modify and View Record.</p>
 
-<img src = "https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/UserGuideSamples/Main_Window.png">
+<centre> 
+<img src = "https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/UserGuideSamples/Main_Window.png" width = 500>
+</centre> 
 
-<p><b>* Step 02:</b> Now after navigating to Add Record. We can add all corresponding values. After that, we will calculate the results.</p>
+<p><b>•	  Step 02:</b> Now after navigating to Add Record. We can add all corresponding values. After that, we will calculate the results.</p>
 
-<img src = "https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/UserGuideSamples/Add_Record.png">
+<center> 
+<img src = "https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/UserGuideSamples/Add_Record.png" width = 500>
+</center> 
+  
+<p><b>•	 Step 03:</b> Then click on the button Transcript, the transcript while be generated at the right corner.</p>
 
-<p><b>* Step 03:</b> Then click on the button Transcript, the transcript while be generated at the right corner.</p>
+<center> 
+<img src = "https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/UserGuideSamples/Transcript_Record.png" width = 500>
+</center> 
+  
+<p><b>•	 Step 04:</b> And you can also print the transcript, while clicking the Print button.</p>
 
-<img src = "https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/UserGuideSamples/Transcript_Record.png">
+<center> 
+<img src = "https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/UserGuideSamples/Printing_Job.png" width = 500>
+</center> 
+  
+<p><b>•	 Step 05:</b> Below is the justification of how printing job is executed.</p>
 
-<p><b>* Step 04:</b> And you can also print the transcript, while clicking the Print button.</p>
+<img src="https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/UserGuideSamples/Printing_Job_MessageBox.png" alt="Printing Message Box" width = 300> <img src="https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/UserGuideSamples/Printing_Showcase.jpeg" alt="Printer Showcase" width = 300>
 
-<img src = "https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/UserGuideSamples/Printing_Job.png">
+<p><b>•	 Step 06:</b> Meanwhile, you can upload the data to Azure MySQL Server. As on the database table, we can see that results have been recorded to database with Student_ID of 2019-SE-200.</p>
 
-<p><b>* Step 05:</b> Below is the justification of how printing job is executed.</p>
+<center> 
+<img src = "https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/UserGuideSamples/Database_MySQL.png"  width = 500>
+</center> 
 
-<img src = "https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/UserGuideSamples/Printing_Job_MessageBox.png">
-<img src = "https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/UserGuideSamples/Printing_Showcase.jpeg">
+<p><b>•	 Step 07:</b> And just for recalling, you can search the recorded results, view them and print if desired.</p>
 
-
-
-<p><b>* Step 06:</b> Meanwhile, you can upload the data to Azure MySQL Server. As on the database table, we can see that results have been recorded to database with Student_ID of 2019-SE-200.</p>
-
-<img src = "https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/UserGuideSamples/Database_MySQL.png">
-
-
-<p><b>* Step 07:</b> And just for recalling, you can search the recorded results, view them and print if desired.</p>
-
-<img src = "https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/UserGuideSamples/View_Record.png">
-
+<center> 
+<img src = "https://raw.githubusercontent.com/mhuzaifadev/Students_Record_Management/main/UserGuideSamples/View_Record.png"  width = 500>
+</center> 
 
 
 <h3> Developed by: </h3>
