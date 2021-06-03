@@ -55,6 +55,7 @@ The main objective of this project is to build a student database system that wi
 </center> 
 
 
+<hr>
 <h3> Developed by: </h3>
 
 * <h3><a href="https://github.com/mhuzaifadev"> Muhammad Huzaifa Shahbaz </a></h3>
